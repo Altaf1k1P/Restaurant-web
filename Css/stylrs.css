@@ -251,7 +251,6 @@ main{
 
 .sec5 {
     padding: 7%;
-    
 }
 
 .sec5 .signup{
@@ -329,3 +328,48 @@ main{
 }
 
 
+/* footer */
+
+footer {
+    padding-top: 2rem ;
+    color: #2d2c2c;
+    text-align: center;
+    overflow-y: hidden;
+}
+
+footer .content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 4rem 5rem;
+
+}
+
+footer .content .logo{
+    width: 20vw;
+    max-width: 200px;
+}
+
+footer .content .logo h1{
+    font-size: 2.4rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+footer .content .logo span{
+    font-size: .8rem;
+}
+
+.Menu h3{
+   font-size: 1rem;
+   margin-bottom: .2rem;
+}
+
+.Menu ul li{
+    color: #5d5d5d;
+}
+
+footer p{
+    background: rgb(210, 160, 121);
+    padding: 1rem;
+}
