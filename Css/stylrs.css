@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+   
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+    max-height: 1500px;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+nav {
+    background: #f2f2f2;
+    position: absolute;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav .nav1 a{
+    color: #333;
+    font-size: 1rem;
+    padding-right: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+nav .nav1 a:hover {
+    color: rgba(237, 118, 14, 0.5);
+}
+nav .logo{
+    text-align: center;
+    font-family:  "League Spartan", serif;
+}
+nav .logo h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+}
+
+nav .logo p{
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #333;
+}
+
+nav .hamburger{
+    display: none;
+}
+
+nav .nav2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+nav .nav2 .search-bar{
+    border-bottom: 1px solid rgb(59, 59, 59);
+    padding-bottom: 10px;
+    margin-right: 20px;
+}
+
+nav .nav2 .search-bar input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 150px;
+    color: #333;
+}
+
+.nav2 .search-bar input::placeholder{
+color: black;
+}
+.nav2 .user{
+ padding-bottom: 10px;
+ margin-left: 20px; 
+ cursor: pointer;
+}
+
+main{
+    height: 100vh;
+    width: 100%;
+}
+.sec1, .sec2, .sec4{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sec1 .image img ,.sec4 .image img{
+    width: 50vw;
+    max-width: 700px;
+    margin-right: -5vw;
+}
+
+.sec1 .content, .content2, .sec4 .content{
+    width: 50vw;
+    padding: 7%;
+}
+
+.sec1 .content h1, .sec4 .content h1{
+    color: rgb(57, 33, 55);
+    font-size: 3.4rem;
+    margin-bottom: 0.9rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.sec1 .content p , .content2 p, .sec4 .content p{
+    color: rgb(109, 97, 110);
+    font-size: 1.2rem;
+    margin-bottom: 1.9rem;
+}
+
+.sec1 .content .btn , .sec4 .content .btn{
+    padding: 1rem 2rem;
+    background-color: rgb(239, 122, 30);
+    display: inline-flex;
+    align-items: center;
+    border: none;
+    border-radius: .5rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.content .btn i{
+    background: transparent;
+    color: white;
+    margin-left: 1.2rem;
+    font-size: 1.2rem;
+}
+
+
+ .content .btn:hover{
+    background-color: rgba(239, 122, 30, 0.763);
+    transform: translateX(20px);
+}
+
+.sec2 .content2 h3{
+    color: rgb(239, 122, 30);
+    font-family: "Poppins", serif;
+    font-style: italic;
+}
+.sec2 .image2 img{
+    width: 50vw;
+    max-width: 700px;
+} 
+.sec2 .content2 h1{
+    color: rgb(57, 33, 55);
+    font-size: 2.4rem;
+    margin-bottom: 0.9rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+/* section3 */
+.sec3 {
+    display: flex;
+    flex-direction: column;
+    padding: 7%;
+}
+
+.sec3 h1 {
+    color: rgb(57, 33, 55);
+    text-align: center;
+    font-size: 3.4rem;
+    margin-bottom: 3rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.sec3 .dishes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 1.5rem;
+}
+
+.dishe__card {
+    width: 300px;
+    height: auto;
+    padding: 1.5rem;
+    background: linear-gradient(145deg, #ffffff, #f0f0f0);
+    border-radius: 1.5rem;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.dishe__card img {
+    width: 100%;
+    height: 200px; /* Fix image height */
+    border-radius: 1rem;
+    object-fit: cover; /* Prevents distortion */
+    margin-bottom: 1rem;
+}
+
+.dishe__card h3 {
+    color: rgb(57, 33, 55);
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+.dishe__card p {
+    color: rgb(109, 97, 110);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.dishe__card span {
+    display: inline-block;
+    background-color: rgb(239, 122, 30);
+    color: white;
+    padding: 0.5rem 1.2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 2rem;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.dishe__card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 15px 25px rgba(239, 122, 30, 0.2), 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.dishe__card:hover span {
+    background-color: rgb(255, 142, 50);
+}
+
+/* section5 */
+
+.sec5 {
+    padding: 7%;
+    
+}
+
+.sec5 .signup{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 3rem;
+    padding: 7%;
+    background: #2d2c2c;
+    overflow-y: hidden;
+}
+
+
+.sec5 .signup .image2 img{
+    width: 50vw;
+    max-width: 400px;
+}
+
+.sec5 .signup .content2{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+    
+}
+
+.sec5 .signup .content2 h1{
+    color: white;
+    font-size: 3.4rem;
+    margin-bottom: 0.9rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.sec5 .signup .content2 .input{
+    width: 75%;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 2.8rem;
+    outline: none;
+    background-color: white;
+    color: #5d5d5d;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+ .content2 .input input{
+    width: 70%;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 1rem;
+    outline: none;
+    background-color: white;
+    color: #5d5d5d;
+    font-size: 1.2rem;
+}
+
+.content2 .input input::placeholder{
+    color: #5d5d5d;
+}
+
+.sec5 .signup .content2 .btn{
+    padding: 10px 15px;
+    background-color: rgb(239, 122, 30);
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+
