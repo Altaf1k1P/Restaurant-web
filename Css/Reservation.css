@@ -1,0 +1,142 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: url("../images/img8.jpg") no-repeat;
+    background-size: cover;
+}
+nav{
+    background: linear-gradient(to bottom, white -100%,transparent);
+}
+.Reservation__container{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, white -100%,transparent);
+} */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: url("../images/img8.jpg") no-repeat center center;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), transparent);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+nav .nav1 a,
+nav .nav2 a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav .nav1 a:hover,
+nav .nav2 a:hover {
+    color: rgba(237, 118, 14, 0.8);
+}
+
+nav .logo h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 0.2rem;
+}
+
+nav .logo p {
+    font-size: 0.8rem;
+    color: #777;
+}
+
+/* Main Reservation Section */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.Reservation__container {
+    width: 50%;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.Reservation__container h1 {
+    margin-bottom: 1.5rem;
+    color: #333;
+    font-size: 2rem;
+}
+
+.Reservation__container .input {
+    margin-bottom: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.Reservation__container .input input,
+.Reservation__container .input textarea {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    outline: none;
+}
+
+.Reservation__container .input input:focus,
+.Reservation__container .input textarea:focus {
+    border-color: rgba(237, 118, 14, 0.8);
+    box-shadow: 0 0 5px rgba(237, 118, 14, 0.5);
+}
+
+.Reservation__container textarea {
+    resize: none;
+    height: 100px;
+}
+
+.Reservation__container .input i {
+    position: absolute;
+    right: 1.5rem;
+    top: 1rem;
+    color: #999;
+}
+
+/* Submit Button */
+.Reservation__container button {
+    padding: 1rem 2rem;
+    background: rgba(237, 118, 14, 0.8);
+    color: white;
+    border: none;
+    border-radius: 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.Reservation__container button:hover {
+    background: rgba(237, 118, 14, 1);
+}
