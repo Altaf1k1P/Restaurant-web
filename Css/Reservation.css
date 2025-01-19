@@ -27,44 +27,15 @@ body {
     background: url("../images/img8.jpg") no-repeat center center;
     background-size: cover;
     font-family: Arial, sans-serif;
+    
 }
 
 /* Navigation Bar */
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), transparent);
-    position: fixed;
-    width: 100%;
     z-index: 100;
 }
 
-nav .nav1 a,
-nav .nav2 a {
-    margin: 0 1rem;
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-nav .nav1 a:hover,
-nav .nav2 a:hover {
-    color: rgba(237, 118, 14, 0.8);
-}
-
-nav .logo h1 {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 0.2rem;
-}
-
-nav .logo p {
-    font-size: 0.8rem;
-    color: #777;
-}
 
 /* Main Reservation Section */
 main {
